@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="txt.css">
+</head>    
+
+<body background="img/photorealistic-tree-with-branches-trunk-outside-nature.jpg">
+
+    <div class="">
+        <div class="weather_details">
+            <h1 id="weather">Weather</h1>
+            <div>
+                
+                <input class="btnSearch" id="search_field" type="text" name=search placeholder="Search">
+                <button class="btnSearch" id="search_btn" onclick = "search()">Search</button>
+                <button id="current">Current Location</button>
+            </div>
+        </div>
+    </div>
+    <div id="first">
+        <div class="card">
+            <div class="current_details">
+                <div id ="nowTempDetails"class="details">
+                    <h3 id="now">Now</h3>
+                    <h2 id ="nowTemp">31.04&deg;C</h2>
+                </div>
+                <hr>
+                <div class="icons">
+                    <img id="dateImg" src="img/icons8-date-50.png" alt=""><span id="nowDate">2024-08-30</span><br><br>
+                    <img id="locationImg" src="img/icons8-location-50.png" alt=""><span id="nowLocation">SriLanka,Horana</span>
+                </div>
+            </div>
+            <div id="description">
+                <img id="desimg" src="" alt="">
+                <p>Local Time</p>
+                <p>________</p>
+                <p>Sun Rise</p>
+                <p>Sun set</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <h2>Todays Highlight</h2>
+            <div class="humidity">
+                <p id="humidityHead">Humidity</p>
+                <img id="imghumidity" src="img/icons8-humidity-80.png" alt="">
+                <span id="humidityValue">70%</span>
+            </div>
+            <div class="wind">
+                <p id="windSpeed">Wind Speed</p>
+                <img id="imgWind" src="img/icons8-wind-48.png" alt="">
+                <span id="windValue">2.06m/s</span>
+            </div>
+            <div class="map">
+                <img id="mapDetails" src="" alt="map">
+            </div>
+
+        </div>
+        <div class="forecast">
+            <h2>5 Days Forecast</h2>
+            <div id="forecst5Days"class="forcastDetails">
+                <div id="day1" class="nextDetails">
+                    <span class="date">_____<br></span>
+                    <span class="forecastTemp">31.04&deg;C <br> <img src ="https://cdn.weatherapi.com/weather/64x64/day/302.png"></span>
+                    <span class="other">----------</span>
+                </div>
+                <div id="day2" class="nextDetails">
+                    <span class="date">_____</span>
+                    <span class="forecastTemp">31.04&deg;C</span>
+                    <span class="other">----------</span>
+                </div>
+                <div id="day3" class="nextDetails">
+                    <span class="date">_____</span>
+                    <span class="forecastTemp">31.04&deg;C</span>
+                    <span class="other">----------</span>
+                </div>
+                <div id="day4" class="nextDetails">
+                    <span class="date">_____</span>
+                    <span class="forecastTemp">31.04&deg;C</span>
+                    <span class="other">----------</span>
+                </div>
+                <div id="day5" class="nextDetails">
+                    <span class="date">_____</span>
+                    <span class="forecastTemp">31.04&deg;C</span>
+                    <span class="other">----------</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <h2 id="last_h2">Last 7 Days</h2>
+        <div id="lastDays" class="Days">
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+            <div class="dayily">
+                <p class="head">Date</p>
+                <p class="temp7days">31.04&deg;C</p><hr>
+                <p class="widthOfDays">Wind Speed</p>
+                <p class="widthOfDays">2.06m/s</p><hr>
+                <p class="widthOfDays">Humidity</p>
+                <p class="widthOfDays">70%</p>
+            </div>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

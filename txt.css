@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(188, 178, 178);
+}
+
+#first {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+}
+
+#first div {
+    margin: 20px;
+}
+
+.weather_details {
+    position: sticky;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    & #search_btn,
+    #current {
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    & #search_field {
+        padding: 10px;
+    }
+
+    #current {
+        background-color: #ea6e4b;
+    }
+}
+
+.current_details {
+    background-color: rgba(85, 240, 203,0.15);
+    color: aliceblue;
+    border-radius: 20px;
+    gap:5px;
+    padding:3px;
+    margin-bottom:5px;
+}
+
+.details {
+    font-weight: 500;
+
+    & h3 {
+        margin-top: 0%;
+    }
+    & h2 {
+        margin-left: 20px;
+    }
+}
+.icons {
+    align-content: left;
+    margin: 5px;
+
+    & #dateImg,
+    #locationImg {
+        width: 20px;
+    }
+
+    & span {
+        margin-left:5px;
+        gap:5px;
+    }
+}
+
+#description {
+    background-color:rgba(85, 240, 203,0.15);
+    color: aliceblue;
+    gap:5px;
+    padding:3px;
+    margin-bottom:5px;
+    border-radius: 20px;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    & #desimg{
+        width:5px;
+    }
+}
+
+.humidity,
+.wind {
+    background-color: rgba(85, 240, 203,0.15);
+    color: aliceblue;
+    display: inline-table;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    gap: 5px;
+
+    & #imghumidity,
+    #imgWind {
+        width: 30px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    & #humidityHead,
+    #windSpeed {
+        margin-top: 0%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    & #humidityValue,
+    #windValue {
+        font-size: 20px;
+        text-align:rigth;
+        margin-left:55px;
+    }
+}
+
+#mapDetails{
+    height: 250px;;
+    width:475px;
+    border-radius:30px;
+}
+.forcastDetails{
+    background-color: rgba(85, 240, 203,0.15);
+    color: aliceblue;
+    border-radius: 20px;
+    display:grid;
+    justify-content: left;
+    align-items: center;
+}
+.forcastDetails div {
+    display: flex;
+    grid-template-columns: max-content;
+    gap: 35px;
+    align-content: left;
+    margin:25px;
+    &.nextDetails{
+       padding: 5px;
+    }
+    & .forecastTemp {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    & .date{
+        font-size: 20px;
+    }
+    & .other{
+        font-size: 16px;
+    }
+}
+#last_h2{
+   padding-left:55px;
+}
+.dayily{
+    background:rgba(53, 190, 158,0.15);
+    color: aliceblue;
+    display: inline-table;
+    border-radius:20px;
+    padding:25px;
+    margin:25px;
+    & .widthOfDays ,.head,.temp7days{
+        text-align:center;
+        font-weight: bold;
+    }
+}
+
